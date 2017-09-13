@@ -9,24 +9,36 @@
   <meta name="author" content="SitePoint">
 
   <link rel="stylesheet" href="css/styles.css?v=1.0">
-
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 
 <body>
-<div class="mainDiv">
-	<img src="meditation.png" class="mainImage">
+<header>
+	<img src="meditation.png">
+</header>
+<nav>
 	<ul>
-		<li><a class="active" href="hlavni stranka">Hlavni stranka</a></li>
-		<li><a href="aktuality">Aktuality</a></li>
-		<li><a href="rozvrh">Rozvrh</a></li>
-		<li><a href="kontakt">Kontakt</a></li>
-		<li><a href="Fotogalerie">Fotogalerie</a></li>
+		<a href="#"><li class="active">Hlavní stránka</li></a>
+		<a href="#"><li>O mně</li></a>
+		<a href="#"><li>Aktuality</li></a>
+		<a href="#"><li>Rozvrh</li></a>
+		<a href="#"><li>Galerie</li></a>
+		<a href="#"><li>Kontakt</li></a>
 	</ul>
-	<div class="article">
-		<h1 class="article-title">Kéž jsou všechny bytosti šťastny</h1>
-		<p class="article-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi non risus sem. Nunc eros orci, congue eu vulputate eget, semper id lorem. Duis convallis fringilla sapien, rutrum tempus velit porttitor dictum. Praesent at euismod purus, in dapibus ipsum. Proin pulvinar nisi sed magna mattis suscipit. Vivamus nec imperdiet ligula. Morbi diam dolor, elementum vitae rutrum a, pulvinar id velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent vitae nisi sit amet magna varius pulvinar. Integer nec mauris non nulla ornare facilisis.</p>
-	</div>
-</div>
-<script src="js/scripts.js"></script>
+	<div class="handle">Menu</div>
+</nav>
+<section>
+<h1>Lorem Ipsum</h1>
+	Lorem ipsum dolor sit amet, consectetuer adipiscing elit. In dapibus augue non sapien. Curabitur bibendum justo non orci. Proin mattis lacinia justo. Maecenas sollicitudin. Nullam sit amet magna in magna gravida vehicula. Nunc tincidunt ante vitae massa. Mauris dictum facilisis augue. Pellentesque sapien. Nullam eget nisl.
+
+Nulla accumsan, elit sit amet varius semper, nulla mauris mollis quam, tempor suscipit diam nulla vel leo. Etiam egestas wisi a erat. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat. Nulla turpis magna, cursus sit amet, suscipit a, interdum id, felis. Nullam faucibus mi quis velit. Vivamus porttitor turpis ac leo. Integer imperdiet lectus quis justo. Sed ac dolor sit amet purus malesuada congue. Nullam eget nisl. Integer imperdiet lectus quis justo. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Suspendisse nisl. Etiam quis quam. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Aliquam erat volutpat. Proin mattis lacinia justo. Aliquam erat volutpat. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+
+Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nunc auctor. Suspendisse sagittis ultrices augue. Nullam at arcu a est sollicitudin euismod. Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur? Duis bibendum, lectus ut viverra rhoncus, dolor nunc faucibus libero, eget facilisis enim ipsum id lacus. Maecenas sollicitudin. Donec quis nibh at felis congue commodo. In laoreet, magna id viverra tincidunt, sem odio bibendum justo, vel imperdiet sapien wisi sed libero. Duis viverra diam non justo. Nunc auctor.
+</section>
+<script>
+	$('.handle').on('click', function(){
+		$('nav ul').toggleClass('showing');
+	});
+</script>
 </body>
 </html>
