@@ -12,6 +12,7 @@ header{
 	text-align: center;
 }
 
+
 a{
 	text-decoration: none;
 	color: inherit;
@@ -52,8 +53,15 @@ section {
 	margin: 0 auto;
 }
 
-section h1 {
+
+h1 {
 	color: #4CAF50
+}
+
+h2 {
+	color: #4CAF50;
+	padding-bottom: 5px;
+	padding-top: 20px;
 }
 
 .handle{
@@ -68,6 +76,37 @@ section h1 {
 }
 
 
+#map {
+	width: 80%;
+	height: 300px;
+}
+
+#container {
+	width: 80%;
+	margin: auto;
+}
+
+#map-div {
+	width: 50%;
+	float: left;
+	height: 300px;
+}
+
+#kontakt-div {
+	width: 50%;
+	float: left;
+	height: 300px;
+}
+
+td{
+	padding: 5px;
+}
+
+#zvyrazneni {
+	font-weight: bold;
+	color: #4CAF50;
+}
+
 .footer{
 	position: absolute;
 	left: 0;
@@ -78,7 +117,6 @@ section h1 {
 	color: #4CAF50;
 	padding: 5px;
 }
-
 
 @media screen and (max-width: 645px){
 

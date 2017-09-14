@@ -1,0 +1,82 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Joga pro všechny</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+
+  <link rel="stylesheet" href="css/styles.css?v=1.0">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+<body>
+<header>
+	<img src="meditation.png">
+</header>
+<nav>
+	<ul>
+		<a href="../../index.html"><li>Hlavní stránka</li></a>
+		<a href="#"><li>O mně</li></a>
+		<a href="#"><li>Aktuality</li></a>
+		<a href="#"><li>Rozvrh</li></a>
+		<a href="#"><li>Galerie</li></a>
+		<a href="#"><li class="active">Kontakt</li></a>
+	</ul>
+	<div class="handle">Menu</div>
+</nav>
+<div id="container">
+	<div id="map-div">
+		<h2>Kde se nacházíme:</h2>
+		<div id="map"></div>
+	</div>
+	<div id="kontakt-div">
+		<h2>Kontaktní informace:</h2>
+		<div id="contact_info">
+			<table>
+				<tr>
+					<td id="zvyrazneni">Hlavní jogín:</td>
+					<td >Aneta Borovičková</td>
+				</tr>
+				<tr>
+					<td id="zvyrazneni">Adresa mekky:</td>
+					<td>V Kolonii 2104, Nymburk (8 patro, dveře č. 815)</td>
+				</tr>
+				<tr>
+					<td id="zvyrazneni">Telefon:</td>
+					<td>+420 721 387 157</td>
+				</tr>
+				<tr>
+					<td id="zvyrazneni">Email:</td>
+					<td>jogaweb@gmail.com</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+</div>
+<div class="footer">
+	&copy Luka Lukaševic 2017
+</div>
+<script>
+	function initMap(){
+		var location = {lat: 50.191989, lng: 15.041378};
+		var map = new google.maps.Map(document.getElementById('map'), {
+			zoom: 16,
+			center: location,
+		});
+		var marker = new google.maps.Marker({
+			position: location,
+			map: map,
+		});
+	}
+</script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAa1pHDqDAg5iZIg5Yp2bqfkMuYGUr7mbo&callback=initMap"></script>
+<script>
+	$('.handle').on('click', function(){
+		$('nav ul').toggleClass('showing');
+	});
+</script>
+</body>
+</html>
